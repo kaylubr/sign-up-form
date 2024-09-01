@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --white: white;
+  --main-font: 'Noto Sans';
+  --main-color: rgb(67, 66, 66);
 }
 
+/* Global reset */
 * {
   margin: 0px;
   padding: 0px;
@@ -19,17 +23,67 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  background-color: var(--white);
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  gap: 2rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: 5px 7px 25px -19px black;
+  padding: 20px 38px;
+  height: 300px;
+}
+
+form label {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--main-color);
+  margin-bottom: 2px;
+}
+
+input {
+  width: 200px;
+  height: 32px;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+}
+
+.top-section {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-weight: bolder;
+}
+
+.bot-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.bot-section > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 35%;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 48px;
+}
+
+/* Header Styles */
 header {
   position: absolute;
   display: flex;
   width: 100vw;
   height: 110px;
   left: 0px;
-  top: 30%;
+  top: 23%;
   align-items: center;
   background-color: rgb(41, 38, 38); 
   z-index: -1;
