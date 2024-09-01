@@ -91,6 +91,7 @@ form label {
   font-size: 0.7rem;
   color: var(--main-color);
   margin-bottom: 2px;
+  cursor: pointer;
 }
 
 input {
@@ -121,3 +122,38 @@ input {
   height: 48px;
 }
 
+
+/* Main footer style */
+
+#footer-section > button,
+#footer-section > p {
+  margin-left: var(--main-left-margin);
+}
+
+button[type="submit"] {
+  background-color: rgb(255, 139, 97);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  width: 220px;
+  height: 48px;
+  font-weight: bolder;
+  color: var(--white);
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(215, 109, 70);
+}
+
+#footer-section p {
+  margin-top: 1.5rem;
+}
+
+#footer-section p:last-child > a{
+  text-decoration: none;
+  color: coral;
+}
+
+#footer-section p:last-child > a:hover {
+  color: rgb(215, 109, 70);
+}
