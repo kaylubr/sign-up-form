@@ -130,7 +130,7 @@ input {
   margin-left: var(--main-left-margin);
 }
 
-button[type="submit"] {
+#submit-btn {
   background-color: #508D4E;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -141,7 +141,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+#submit-btn:hover {
   background-color: #3e5e3d;
 }
 
@@ -153,12 +153,16 @@ button[type="submit"]:hover {
   font-family: var(--main-font);
 }
 
-#footer-section p:last-child > a{
+a {
   text-decoration: none;
   font-weight: bold;
   color: #508D4E;;
 }
 
-#footer-section p:last-child > a:hover {
+a:hover {
   color: #2e402e;
+}
+
+a:visited {
+  color: #508D4E;
 }
