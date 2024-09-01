@@ -20,7 +20,7 @@ body {
   justify-content: flex-end;
   position: relative;
   min-height: 100vh;
-  background: no-repeat center/100% url(./img/cat-bg.jpg);
+  background: no-repeat center/100% url(./img/login-background.png);
 }
 
 /* Header Styles */
