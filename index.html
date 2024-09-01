@@ -29,34 +29,35 @@
         <div class="bot-section">
           <div>
             <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" required />
           </div>
           <div>
             <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" />
+            <input type="text" id="last-name" required />
           </div>
           <div>
             <label for="email">EMAIL</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
           </div>
           <div>
             <label for="tel">PHONE NUMBER</label>
-            <input type="tel" id="tel" />
+            <input type="tel" id="tel" required />
           </div>
           <div>
             <label for="password">PASSWORD</label>
-            <input type="password" id="password" />
+            <input type="password" id="password" required />
+            <p>* Passwords do not match</p>
           </div>
           <div>
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-password" />
+            <input type="password" id="confirm-password" required />
           </div>
         </div>
+        <section id="footer-section">
+          <button type="submit" id="submit-btn">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </section>
       </form>
-      <section id="footer-section">
-        <button type="submit" id="submit-btn">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
-      </section>
     </main>
   </body>
 </html>

@@ -57,6 +57,7 @@ main {
   background-color: rgb(254, 254, 254);
   justify-content: center;
   gap: 2rem;
+  padding-bottom: 173px;
 }
 
 .main-header {
@@ -94,10 +95,24 @@ form label {
 }
 
 input {
+  padding: 6px;
   width: 240px;
   height: 32px;
   border: 1px solid #E5E7EB;
-  border-radius: 6px;
+  padding: 10px 13px;
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-size: 1rem;
+}
+
+input:focus { 
+  outline: none;
+  box-shadow: 2px 2px 5px -2px black;
+  border: 1px solid blue;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid rgb(206, 9, 9);
 }
 
 .top-section {
@@ -121,12 +136,14 @@ input {
   height: 54px;
 }
 
-
+.bot-section > div:nth-child(5) > p{
+  color: rgb(206, 9, 9);
+  font-size: 0.7rem;
+}
 /* Main footer style */
 
-#footer-section > button,
-#footer-section > p {
-  margin-left: var(--main-left-margin);
+#footer-section {
+  margin-top: 70px;
 }
 
 #submit-btn {
