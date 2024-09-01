@@ -5,6 +5,7 @@
   --white: white;
   --main-font: 'Noto Sans';
   --main-color: rgb(67, 66, 66);
+  --main-left-margin: 38px;
 }
 
 /* Global reset */
@@ -26,9 +27,25 @@ main {
   display: flex;
   flex-direction: column;
   width: 60%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(254, 254, 254);
   justify-content: center;
   gap: 2rem;
+}
+
+.main-header {
+  font-size: 1.3rem;
+  max-inline-size: 60ch;
+  margin-left: var(--main-left-margin);
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+
+.main-header p:last-child > span {
+  font-style: italic;
+}
+
+.main-header > p {
+  margin-bottom: 20px;
 }
 
 form {
