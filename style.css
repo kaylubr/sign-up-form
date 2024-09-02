@@ -7,6 +7,8 @@
   --main-color: rgb(67, 66, 66);
   --main-left-margin: 38px;
   --invalid-color: rgb(206, 9, 9);
+  --theme-color: #508D4E;
+  --theme-color-hover: #3e5e3d;
 }
 
 /* Global reset */
@@ -115,14 +117,14 @@ input {
 input:focus { 
   outline: none;
   box-shadow: 2px 2px 5px -2px black;
-  border: 1px solid blue;
+  border: 1px solid var(--theme-color);
 }
 
-input[type="password"]:invalid {
+input[type="password"]:focus:invalid {
   border: 1px solid var(--invalid-color);
 }
 
-#password:invalid + p::after {
+#confirm-password:invalid:focus + p::after {
   content: "* Passwords do not match";
   color: var(--invalid-color);
   font-size: 0.7rem;
@@ -155,7 +157,7 @@ input[type="password"]:invalid {
 }
 
 #submit-btn {
-  background-color: #508D4E;
+  background-color: var(--theme-color);
   border: 1px solid transparent;
   border-radius: 8px;
   width: 220px;
@@ -166,7 +168,7 @@ input[type="password"]:invalid {
 }
 
 #submit-btn:hover {
-  background-color: #3e5e3d;
+  background-color: var(--theme-color-hover);
 }
 
 #footer-section p {
