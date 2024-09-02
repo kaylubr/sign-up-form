@@ -21,6 +21,7 @@ body {
   position: relative;
   min-height: 100vh;
   background: no-repeat center/100% url(./img/login-background.png);
+  background-size: cover;
 }
 
 /* Header Styles */
@@ -73,12 +74,13 @@ main {
 }
 
 .main-header > p {
-  margin-bottom: 20px;
+  margin: 38px 38px 38px 0px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: var(--white);
   box-shadow: 5px 7px 25px -19px black;
   padding: 20px 38px;
@@ -179,6 +181,84 @@ a:hover {
   color: #2e402e;
 }
 
-a:visited {
-  color: #508D4E;
+@media (max-width: 1700px) {
+  .bot-section {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  body {
+    justify-content: center;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    border-radius: 8px;
+  }
+
+  .main-header {
+    font-size: 0.9rem;
+  }
+
+  form {
+    border-radius: 8px;
+    height: 520px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .bot-section {
+    width: 100%;
+  }
+
+  .bot-section > div{
+    margin-right: 0px;
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 590px) {
+  #submit-btn {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  #footer-section > p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 524px) {
+  #footer-section {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 391px) {
+  #footer-section {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 388px) {
+  form {
+    height: 540px;
+  }
+
+  #footer-section {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 338px) {
+  form {
+    height: 560px;
+  }
 }
