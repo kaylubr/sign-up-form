@@ -59,6 +59,7 @@ main {
   justify-content: center;
   gap: 2rem;
   padding-bottom: 173px;
+  box-shadow: -10px 0px 10px -10px black;
 }
 
 .main-header {
@@ -80,7 +81,6 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  position: relative;
   background-color: var(--white);
   box-shadow: 5px 7px 25px -19px black;
   padding: 20px 38px;
