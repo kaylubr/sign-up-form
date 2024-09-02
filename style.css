@@ -37,11 +37,11 @@ header {
   z-index: -1;
   gap: 1.2rem;
   background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(7, 7, 7, 0.5));
+  padding-left: 12%;
 }
 
 header > img {
   width: 100px;
-  margin-left: 13%;
 }
 
 header > div {
@@ -181,12 +181,42 @@ a:hover {
   color: #2e402e;
 }
 
+/* Media queries */
+
 @media (max-width: 1700px) {
   .bot-section {
     width: 100%;
   }
 }
 
+/* For a responsive header */
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  header {
+    padding-left: 9%;
+  }
+}
+
+@media (max-width: 1400px) {
+  header {
+    padding-left: 9%;
+  }
+}
+
+@media only screen and (min-width: 1290px) and (max-width: 1400px) {
+  header {
+    padding-left: 7%;
+  }
+}
+
+
+@media (max-width: 1290px) {
+  header {
+    padding-left: 5%;
+  }
+}
+
+/* For a responsive form/main */
 
 @media (max-width: 1200px) {
   body {
@@ -222,9 +252,15 @@ a:hover {
     margin-right: 0px;
     flex: 1 1 100%;
   }
+
+  #footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 638px) {
   #submit-btn {
     width: 100%;
     font-size: 0.7rem;
